@@ -40,11 +40,13 @@
 	position: absolute;
 	bottom: 10%;
 	left: 30%;
+	-webkit-transform: translate(0,-50%) scale(1, 4);
 	transform: translate(0,-50%) scale(1, 4);
 	text-transform: uppercase;
 }
 .page-loader .loader p:after
-{	animation: 1s linear 0s normal none infinite running page-loaderanim;
+{	-webkit-animation: 1s linear 0s normal none infinite running page-loaderanim;
+	animation: 1s linear 0s normal none infinite running page-loaderanim;
 	border: 0 solid #3a6;
 	border-radius: 50%;
 	bottom: 10px;
@@ -64,15 +66,18 @@
 	position: absolute;
 	text-align: center;
 	top: 40%;
+	-webkit-transform: scaleX(0.8);
 	transform: scaleX(0.8);
 	width: 100%;
 }
 
 @keyframes page-loaderanim {
 0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 }

@@ -26,6 +26,8 @@
 	position: absolute;
 	text-align: center;
 	top: 40%;
+	-webkit-transform: scale(1, 2.5);
+	-webkit-transform-origin: 50% 0 0;
 	transform: scale(1, 2.5);
 	transform-origin: 50% 0 0;
 	width: 100%;
@@ -46,6 +48,7 @@
 	margin: -80px 0px 0px -80px;
 	border-color: transparent #E3E4DC;
 	animation: 2s linear 0s reverse none infinite running spin;
+	-webkit-animation: 2s linear 0s reverse none infinite running spin;
 }
 
 .page-loader .loader:after, 
@@ -65,9 +68,17 @@
 	left:10px;
 	top:10px;
 	animation: 1s linear 0s normal none infinite running spin;
+	-webkit-animation: 1s linear 0s normal none infinite running spin;
 }
 
 @keyframes spin 
-{	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+{	0% { 
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+ 	}
+	100% { 
+		-webkit-transform: rotate(360deg); 
+		transform: rotate(360deg); 
+
+	}
 }

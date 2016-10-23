@@ -41,6 +41,7 @@
 	position: absolute;
 	top: 50%;
 	left: 40px;
+	-webkit-transform: translate(0,-50%) scale(1, 4);
 	transform: translate(0,-50%) scale(1, 4);
 	text-transform: uppercase;
 }
@@ -53,6 +54,7 @@
 	height:20px;
 	background-color: #898a86;
 	border-radius: 50%;
+	-webkit-animation: 500ms ease 0s alternate none infinite running page-loaderbounce;
 	animation: 500ms ease 0s alternate none infinite running page-loaderbounce;
 }
 
@@ -62,6 +64,7 @@
 	position: absolute;
 	text-align: center;
 	top: 40%;
+	-webkit-transform: scaleX(0.8);
 	transform: scaleX(0.8);
 	width: 100%;
 }
@@ -71,11 +74,13 @@
     border-radius: 60px 60px 20px 20px;
     height: 5px;
     top: 75%;
+    -webkit-transform: scaleX(2);
     transform: scaleX(2);
 }
 35% {
     border-radius: 50%;
     height: 15px;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 100% {
