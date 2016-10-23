@@ -1,0 +1,81 @@
+.page-loader
+{	position: fixed;
+	background: white;
+	top:0;
+	left:0;
+	bottom:0;
+	right: 0;
+	z-index:10000;
+	-webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+	font-family: "Lucida Grande",Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+}
+.page-loader.hidden
+{	opacity: 0;
+}
+.page-loader .loader p:before
+{	content:""!important;
+}
+
+.page-loader .info
+{	color: #e3e4dc;
+	font-size: 1em;
+	margin: 80px 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	transform: scale(1, 2.5);
+	transform-origin: 50% 0 0;
+	width: 100%;
+}
+
+.page-loader .loader:after, 
+.page-loader .loader:before,
+.page-loader .loader 
+{	border: 3px solid #E3E4DC;
+	border-radius: 50%;
+}
+.page-loader .loader 
+{	position: fixed;
+	top: 40%;
+	left: 50%;
+	width: 160px;
+	height: 160px;
+	margin: -80px 0px 0px -80px;
+	animation: 3s ease-in-out 0s alternate none infinite running spin;
+}
+
+.page-loader .loader:after, 
+.page-loader .loader:before 
+{	content:"";
+	position: absolute;
+	box-sizing: border-box;
+	top:30%;
+	left:30%;
+	width: 40%;
+	height: 40%;
+	animation: 3s ease-in-out 1.2s alternate none infinite running spin;
+}
+.page-loader .loader:before 
+{	width:100px;
+	height:100px;
+	left:30px;
+	top:30px;
+	animation: 3s ease-in-out 0.6s alternate none infinite running spin;
+}
+
+@keyframes spin {
+25% {
+    transform: scale(-1.2, 1.2);
+}
+50% {
+    transform: scale(-1, -1);
+}
+75% {
+    transform: scale(1.2, -1.2);
+}
+100% {
+    transform: scale(1, 1);
+}
+}
