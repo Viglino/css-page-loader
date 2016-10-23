@@ -11,7 +11,7 @@ This is a collection of loading spinners animated with CSS.
 
 ## Basic usage
 
-Place loading code on top of the body
+Place loading code on top of the `body` before other js codes.
 ```html
 <link rel="stylesheet" href="pageloader-loading.css" />
 <script type="text/javascript" src="pageloader.js"></script>
