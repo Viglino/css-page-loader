@@ -57,4 +57,4 @@ Use one of the CSS provided to get another transition or build your own one.
 
 ## License
 
-[MIT License](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
+[MIT License](https://github.com/Viglino/css-page-loader/blob/master/LICENSE)
