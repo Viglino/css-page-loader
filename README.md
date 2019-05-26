@@ -38,7 +38,7 @@ pageLoader.show();
 
 To display information when loading:
 ```javascript
-pageLoader.information("Hello world!");
+pageLoader.info("Hello world!");
 ```
 
 ### Internationalization: 
