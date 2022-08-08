@@ -7,7 +7,7 @@ See it in action: http://viglino.github.io/css-page-loader/
 
 The aim of this project is to create a set of minimal instruction to display loading spinners automatically on top of the page to hide the loading process.
 
-The project also provide a collection of loading spinners animated with CSS.
+The project also provide a collection of loading spinners animated with [CSS](https://www.scaler.com/topics/css/).
 
 ## How it runs?
 
